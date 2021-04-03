@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/icofont/icofont.min.css">
+    <link rel="stylesheet" href="./switch.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- Intro -->
+    <!-- <div class = 'grid-container'> -->
+        <div id="intro">
+            <h1>Hello, <span>Emerald</span></h1>
+            <p>Welcome to your dashboard, kindly sort through the user base</p>
+            <form name='searchForm'>
+                <i class="icofont-search"></i>
+                <input type="text" placeholder="Find a user">
+            </form>
+
+            <p>Show User</p>
+
+            <div id="actions">
+                <div>
+                    <button id="all-users" class="pink-bg white-text-color userBtn">
+                        <i class="icofont-users-alt-5"></i>
+                    </button>
+                    <p>All Users</p>
+                </div>
+                <div>
+                    <button id="male-users"  class="teal-bg white-text-color userBtn">
+                        <i class="icofont-user-male"></i>
+                    </button>
+                    <p>Male Users</p>
+                </div>
+                <div>
+                    <button id="female-users" class="purple-bg white-text-color userBtn">
+                        <i class="icofont-user-female"></i>
+                    </button>
+                    <p>Female Users</p>
+                </div>
+            </div>
+
+        </div>
+        <!-- Data -->
+        <div id="data">
+            <h1>All Users</h1>
+            <p>Filter by</p>
+            <div id="filter">
+                <form name='findInList'>
+                    <i class="icofont-search"></i>
+                    <input type="text" placeholder="Find in list">
+                </form>
+                <select name="filterBy">
+                    <option value="Country">Country</option>
+                </select>
+                <div id="switch-container">
+                    <label class="switch">
+                        <input type="checkbox" />
+                        <div></div>
+                    </label>
+                    <p>Show Country</p>
+                </div>
+            </div>
+            <div id="databox"></div>
+        </div>
+    <!-- </div> -->
+
+    <!-- Script below -->
+    <script src='./app.js'></script>
+</body>
+</html>

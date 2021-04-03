@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: #262A41;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 25px;
+    overflow: hidden;
+}
+
+body > div {
+    flex: 1;
+    height: 100%;
+}
+
+body #intro {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 5%;
+}
+
+body #data {
+    background-color: #F7F7FF;
+    color: #262A41;
+    border-radius: 20px;
+}
+
+/* .grid-container{
+    display: flex;
+} */
+
+#intro > h1 {
+    font-weight: 100;
+}
+
+#intro > h1 span {
+    font-weight: 500;
+}
+
+#intro > p {
+    font-weight: 200;
+}
+
+#intro > form {
+    display: flex;
+    align-items: center;
+    background-color: #3C3F54;
+    color:#fff;
+    padding: 20px 15px;
+    width: 480px;
+    min-width: 300px;
+    border-radius: 10px;
+    margin: 30px 0;
+}
+
+#intro > form input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    caret-color: #fff;
+    margin-left: 10px;
+    width: 100%;
+    color: #fff;
+}
+
+#actions {
+    display: flex;
+}
+
+#actions div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+}
+
+#actions div:first-child {
+    margin-left: 0;
+}
+
+#actions div p {
+    font-size: 10px;
+    font-weight: 200;
+    padding: 10px;
+}
+
+#actions button {
+    transition: .8s;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 25px;
+}
+
+#actions div button:hover {
+    transform: scale(1.2);
+}
+
+/* colors */
+.pink-bg {
+    background-color: #F935A9;
+}
+
+.teal-bg {
+    background-color: #30BBB5;
+}
+
+.purple-bg {
+    background-color: #7946C1;
+}
+
+.white-text-color {
+    color: #fff;
+}
+
+/* Data div part */
+#data {
+    padding: 20px 5%;
+}
+
+#data h1 {
+    font-size: 25px;
+    padding: 10px 0px;
+}
+
+#data #filter {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+
+#data #filter form {
+    background-color: #E2E3EC;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+}
+
+#data #filter input {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: #373a4f;
+    caret-color: #373a4f;
+    margin-left: 10px;
+    width: 100%;
+}
+
+#data #filter select {
+    margin: 20px;
+    background-color: #E2E3EC;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+
+#switch-container {
+    display: flex;
+    align-items: center;
+}
+
+#switch-container .switch {
+    margin-right: 10px;
+}
+
+#databox {
+    height: 500px;
+    overflow-y: scroll;
+}
+
+#databox::-webkit-scrollbar {
+    width: 0;
+}
+
+.user-card {
+    display: flex;
+    background-color: #fff;
+    color: #262A41;
+    padding: 20px;
+    align-items: flex-start;
+    margin: 15px; 
+    border-radius: 10px;
+}
+
+.user-card .image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-image: url('./assets/images/images.png');
+    background-size: cover;background-position: center;
+    border: 3px solid #30BBB5;
+    flex: 1;
+}
+
+.user-card .detail {
+    padding: 0px 20px;
+    flex: 5;
+}
+
+.user-card .detail * {
+    padding: 5px
+}
+
+.user-card p {
+    font-style: italic;
+    font-weight: 700;
+    color: rgba(0,0,0,0.5);
+}
+
+.user-card a {
+    text-decoration: none;
+    color: #bbb
+}
+
+.user-card button {
+    align-self: flex-end;
+    flex: 0.5;
+    padding: 5px;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 18px 10px #30bbb44a;
+    cursor: pointer;
+}
